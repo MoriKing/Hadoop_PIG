@@ -1,5 +1,5 @@
 # Hadoop_PIG
-This is a sample Hadoop PIG solution done by me in a course project.
+This is a sample Hadoop PIG solution done by me in a course project in Aalto University.
 The complete project description can be found in Project_Question.pdf file.
 
 Here's the main description and answered questions:
@@ -17,7 +17,7 @@ user-wall-small.txt.gz : Each line of this second dataset contains three values,
 
 An entry user1 user2 t indicates that user1 wrote on the wall of user2 at time t (note: user1 = user2 is possible). Both datasets share the same space of user-id’s. However, there may be user-id’s that are in the ﬁrst and not in the second set and vice-versa. Both datasets are a subset of the data available at http://socialnetworks.mpi-sws.org/data-wosn2009.html, which is anonymized version of data collected from a subset of the users of a certain well-known social network.
 
-1. The advertisers are interested in ﬁnding out whether it would be worth contacting a few selected users to oﬀer them discounts, hoping to interest a large fraction of the users in their product.
+1- The advertisers are interested in ﬁnding out whether it would be worth contacting a few selected users to oﬀer them discounts, hoping to interest a large fraction of the users in their product.
 number of users
  10000
  1000
@@ -44,6 +44,5 @@ Write a Pig script that computes the distribution (in order to draw a histogram 
 
 That is, your output should contain (in increasing order of degree) lines of the form degree count where degree is a value of node degree observed and count is the number of users in the dataset that have this node degree (i.e., this number of friends).
 
-2. An important advertiser plans the launch of a new product. The advertiser asks the question
-Whether informing (or sending incentives to) a few selected users would create a suﬃcient amount of “buzz” right in time before the planned date of the product launch. Write a Pig script that computes for the time period that is covered by the data in the second data the following statistic for user-id's that appear in both datasets. Consider the set of users U with ﬁxed node degree D. Among these users, compute the average number of wall posts that the users in U D have made during the time time period in question. The scripts should store this value, for each observed node degree, into a ﬁle in increasing order of degree. That is, the output consists of lines of the form degree value where degree is a value of node degree observed and value is the average number of wall posts a user with degree degree has made (to their friends, to themselves, or to someone totally diﬀerent). Note that all wall posts, including those made to users that are not in the ﬁrst dataset are to be taken into account.
+2- An important advertiser plans the launch of a new product. The advertiser asks the question Whether informing (or sending incentives to) a few selected users would create a suﬃcient amount of “buzz” right in time before the planned date of the product launch. Write a Pig script that computes for the time period that is covered by the data in the second data the following statistic for user-id's that appear in both datasets. Consider the set of users U with ﬁxed node degree D. Among these users, compute the average number of wall posts that the users in U D have made during the time time period in question. The scripts should store this value, for each observed node degree, into a ﬁle in increasing order of degree. That is, the output consists of lines of the form degree value where degree is a value of node degree observed and value is the average number of wall posts a user with degree degree has made (to their friends, to themselves, or to someone totally diﬀerent). Note that all wall posts, including those made to users that are not in the ﬁrst dataset are to be taken into account.
 
