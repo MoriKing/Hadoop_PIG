@@ -8,8 +8,8 @@ you were hired by a company that runs a social networking platform. Users can si
 
 Since the company makes its revenue by selling advertising space in its web platform, it is very interested in learning about the social graph that users establish by friend-links and also the interaction by communication between users in order to draw more traﬃc to advertisers. Therefore, it is your task to answer two questions in this context:
 
-1- What is the distribution of the node degree (that is, the number of friends) in the user population?
-2- What is the relationship between the number of friends a user has and the number of wall posts the user sends in a ﬁxed time period (note: users do not need to be friends in order to send wall posts to each others and a user can write on his/her own wall)?
+- What is the distribution of the node degree (that is, the number of friends) in the user population?
+- What is the relationship between the number of friends a user has and the number of wall posts the user sends in a ﬁxed time period (note: users do not need to be friends in order to send wall posts to each others and a user can write on his/her own wall)?
 
 Data can be found in this repository:
 user-links-small.txt.gz : Each line of this ﬁrst dataset contains two user-id’s that establish an undirected link (friend-relationship) between the two.
